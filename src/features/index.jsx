@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
+import DetailPage from "./Product/pages/DetailPage";
 import ListPage from "./Product/pages/ListPage";
 
 function ProductFeature(props) {
@@ -11,6 +12,9 @@ function ProductFeature(props) {
       <Switch>
         <Route exact path={match.url}>
           <ListPage />
+        </Route>
+        <Route exact path={`${match.url}/:productId`}>
+          <DetailPage />
         </Route>
       </Switch>
     </Box>

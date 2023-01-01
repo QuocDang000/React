@@ -12,8 +12,8 @@ ProductList.defaultProps = {
 };
 
 function ProductList({ data, onClickProduct }) {
-  const handleProductClick = (urlProduct) => {
-    onClickProduct(urlProduct);
+  const handleProductClick = (productId) => {
+    onClickProduct(productId);
   };
 
   return (
