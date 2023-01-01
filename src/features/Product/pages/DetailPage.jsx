@@ -50,7 +50,7 @@ function DetailPage() {
 
         <Switch>
           <Route exact path={`${url}`}>
-            <ProductDescription productDescription={productDetail} />
+            <ProductDescription product={productDetail} />
           </Route>
 
           <Route path={`${url}/additional`}>
