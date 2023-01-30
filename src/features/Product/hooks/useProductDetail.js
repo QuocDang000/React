@@ -7,7 +7,6 @@ useProductDetail.propTypes = {
 };
 
 function useProductDetail(productId) {
-  console.log("productId", productId);
   const [productDetail, setProductDetail] = useState({});
   const [loading, setLoading] = useState(false);
 
@@ -17,7 +16,6 @@ function useProductDetail(productId) {
         const response = await productApi.get(productId);
         setProductDetail(response);
         setLoading(true);
-        console.log("123");
       } catch (error) {
         console.log("Failed to get product", error);
       }

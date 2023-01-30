@@ -3,10 +3,12 @@ import { makeStyles } from "tss-react/mui";
 const useStyles = makeStyles()((theme) => {
     return {
       root: {
+        position: 'relative',
       },
   
       left: {
-        width: "250px",
+        position: 'fixed',
+        width: "250px" ,
       },
   
       right: {

@@ -28,12 +28,12 @@ function ListPage(props) {
     limit: 20,
     total: 200,
   });
-  const [filters, setFilters] = useState(() => ({
-    ...queryParams,
+  const [filters, setFilters] = useState({
+    // ...queryParams,
     _page: Number.parseInt(queryParams._page) || 1,
     _limit: Number.parseInt(queryParams._limit) || 9,
     _sort: queryParams._sort || "salePrice:ASC",
-  }));
+  });
 
   useEffect(() => {
     history.push({
@@ -87,10 +87,6 @@ function ListPage(props) {
 
   const handleClickProduct = (urlProduct) => {
     console.log("url", urlProduct);
-    // setFilters(() => ({
-    //   // ...prevFilters,
-    //   urlProduct,
-    // }));
   };
 
   return (
