@@ -9,10 +9,13 @@ const useStyles = makeStyles()((theme) => {
       left: {
         position: 'fixed',
         width: "250px" ,
+        zIndex: '1'
       },
   
       right: {
-        flex: "1 1 0",
+        width: "calc(100% - 450px)",
+        right: '100px',
+        position: 'absolute',
       },
 
       pagination: {

@@ -11,8 +11,8 @@ const LogoutButton = () => {
   }
 
   return (
-    <Button font sx={{ display: {md: 'flex'}, ml: 150 }} color="inherit" onClick={handleLogout}>
-      <Typography fontWeight={800}>Log Out</Typography>
+    <Button font sx={{ display: {md: 'flex'}, ml: "calc(100% - 400px)" }} color="inherit" onClick={handleLogout}>
+      <Typography fontWeight={600}>Log Out</Typography>
     </Button>
   );
 };

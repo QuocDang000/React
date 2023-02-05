@@ -2,9 +2,9 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductFeature from "./features";
-import LoginPage from "./features/Product/pages/LoginPage";
 import PrivateRoute from "./components/Common/PrivateRoute";
 import Header from "./components/Layout/Header";
+import LandingPage from "./components/Layout/LandingPage";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <div className='App'>
           <Switch>
             <Route path='/login'>
-              <LoginPage />
+              <LandingPage />
             </Route>
 
             <PrivateRoute path='/products'>
