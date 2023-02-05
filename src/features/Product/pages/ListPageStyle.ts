@@ -13,8 +13,8 @@ const useStyles = makeStyles()((theme) => {
       },
   
       right: {
-        width: "calc(100% - 450px)",
-        right: '100px',
+        width: "calc(100% - 600px)",
+        right: '140px',
         position: 'absolute',
       },
 
